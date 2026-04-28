@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rotating SLF Trap — A low-cost mechanical trap that passively attracts and captures spotted lanternflies. MAE 2250 Cornell Engineering." />
+    <title>Rotating SLF Trap | SLF Crushers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/slf-crushers-mae2250/assets/index-CMeZX5Nw.js"></script>
+    <link rel="stylesheet" crossorigin href="/slf-crushers-mae2250/assets/index-D9-bBcgE.css">
+  </head>
+  <body>
+
+    <!-- HERO -->
+    <header id="hero">
+      <div class="hero-inner">
+        <p class="hero-label">MAE 2250 · Cornell University</p>
+        <h1 class="hero-title">Rotating SLF Trap</h1>
+        <p class="hero-team">
+          SLF Crushers &mdash; Alice Park &nbsp;·&nbsp; Connor Hyde &nbsp;·&nbsp; Ei Thiri Kyaw &nbsp;·&nbsp; Nayana Zachariah &nbsp;·&nbsp; Serkan Yurday
+        </p>
+        <a href="#problem" class="btn-primary">Explore the Project</a>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- PROBLEM STATEMENT -->
+      <section id="problem" class="section">
+        <div class="container two-col">
+          <div class="text-block">
+            <span class="section-tag">01</span>
+            <h2>Problem Statement</h2>
+            <p>
+              Spotted lanternfly (SLF) infestations are not effectively controlled by current methods,
+              which are labor-intensive, inconsistent, and disruptive to farming operations. SLF
+              significantly reduces grape yield and harms agricultural ecosystems, leading to economic
+              losses and increased strain on farmers.
+            </p>
+          </div>
+          <!-- PHOTO PLACEHOLDER -->
+          <div class="media-placeholder photo-placeholder" id="prototype-photo">
+            <div class="placeholder-inner">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="14" width="48" height="36" rx="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="4" fill="currentColor" opacity="0.4"/>
+                <path d="M22 14l3-5h18l3 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <p>Prototype Photo</p>
+              <span>Drop your image here</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESIGN GOAL -->
+      <section id="design-goal" class="section section-dark">
+        <div class="container">
+          <span class="section-tag">02</span>
+          <h2>Design Goal</h2>
+          <p class="lead">
+            Design and prototype a low-cost rotating trap that passively attracts spotted lanternflies using
+            Tree-of-Heaven sap and mechanically directs them into a contained collection chamber. The system
+            should be easy to manufacture and operate with minimal maintenance in vineyard environments.
+          </p>
+        </div>
+      </section>
+
+      <!-- SUCCESS CRITERIA -->
+      <section id="criteria" class="section">
+        <div class="container">
+          <span class="section-tag">03</span>
+          <h2>Success Criteria + Test Methods</h2>
+          <div class="criteria-grid">
+
+            <div class="criteria-card">
+              <div class="criteria-icon">①</div>
+              <h3>Peg Guidance Test</h3>
+              <p class="assesses"><em>Assesses:</em> Reaper wall &amp; peg plate guides marble to center without jamming, escaping, or compressing</p>
+              <div class="formula">GPI = 100(S<sub>t</sub> − 0.4B<sub>t</sub> − 0.7J<sub>t</sub> − 1.0C<sub>t</sub>)</div>
+            </div>
+
+            <div class="criteria-card">
+              <div class="criteria-icon">②</div>
+              <h3>Chamber Drop Test</h3>
+              <p class="assesses"><em>Assesses:</em> Marble falls cleanly into collection chamber without bouncing out or missed entry</p>
+              <div class="formula">CRI = 100(S<sub>t</sub> − 0.5P<sub>t</sub> − 0.7B<sub>t</sub> − 1.0M<sub>t</sub>)</div>
+            </div>
+
+            <div class="criteria-card">
+              <div class="criteria-icon">③</div>
+              <h3>Rotational Test with Motor</h3>
+              <p class="assesses"><em>Assesses:</em> Full assembly completes 360° revolution under motor power without jamming or displacement</p>
+              <div class="formula">RSI = 100(S<sub>t</sub> − 0.4K<sub>t</sub> − 0.6D<sub>t</sub> − 1.0F<sub>t</sub>)</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section id="results" class="section section-dark">
+        <div class="container">
+          <span class="section-tag">04</span>
+          <h2>Results</h2>
+          <p class="lead">All three subsystem tests exceeded the minimum threshold of 80.</p>
+
+          <div class="results-grid">
+            <div class="score-card">
+              <div class="score-label">Peg Guidance Index</div>
+              <div class="score-abbr">GPI</div>
+              <div class="score-value">93.0</div>
+              <div class="score-threshold">Threshold ≥ 80 &nbsp;·&nbsp; High Priority</div>
+              <div class="score-bar"><div class="score-fill" style="--pct: 93%"></div></div>
+            </div>
+            <div class="score-card">
+              <div class="score-label">Capture Rate Index</div>
+              <div class="score-abbr">CRI</div>
+              <div class="score-value">92.5</div>
+              <div class="score-threshold">Threshold ≥ 80 &nbsp;·&nbsp; High – Live Demo</div>
+              <div class="score-bar"><div class="score-fill" style="--pct: 92.5%"></div></div>
+            </div>
+            <div class="score-card">
+              <div class="score-label">Rotational Stability Index</div>
+              <div class="score-abbr">RSI</div>
+              <div class="score-value">85.0</div>
+              <div class="score-threshold">Threshold ≥ 80 &nbsp;·&nbsp; Medium Priority</div>
+              <div class="score-bar"><div class="score-fill" style="--pct: 85%"></div></div>
+            </div>
+          </div>
+
+          <!-- Results table -->
+          <div class="table-wrap">
+            <table id="results-table">
+              <thead>
+                <tr>
+                  <th>Test</th>
+                  <th>S</th>
+                  <th>B/P/K</th>
+                  <th>J/B/D</th>
+                  <th>C/M/F</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Peg Guidance</td>
+                  <td>19/20</td>
+                  <td>1/20 (B)</td>
+                  <td>0/20 (C)</td>
+                  <td>0/20 (F)</td>
+                  <td class="score-cell">GPI = 100(0.95 − 0.4(0.05)) = <strong>93.0</strong></td>
+                </tr>
+                <tr>
+                  <td>Chamber Drop</td>
+                  <td>19/20</td>
+                  <td>1/20 (P)</td>
+                  <td>0/20 (B)</td>
+                  <td>0/20 (M)</td>
+                  <td class="score-cell">CRI = 100(0.95 − 0.5(0.05)) = <strong>92.5</strong></td>
+                </tr>
+                <tr>
+                  <td>Rotational Test</td>
+                  <td>18/20</td>
+                  <td>1/20 (K)</td>
+                  <td>1/20 (D)</td>
+                  <td>0/20 (F)</td>
+                  <td class="score-cell">RSI = 100(0.90 − 0.4(0.05) − 0.6(0.05)) = <strong>85.0</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO -->
+      <section id="demo" class="section">
+        <div class="container">
+          <span class="section-tag">05</span>
+          <h2>Product Demo + Assembly</h2>
+          <!-- VIDEO PLACEHOLDER -->
+          <div class="media-placeholder video-placeholder" id="demo-video">
+            <div class="placeholder-inner">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="12" width="56" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                <polygon points="26,22 26,42 44,32" fill="currentColor" opacity="0.5"/>
+              </svg>
+              <p>Demo Video</p>
+              <span>Drop your video here</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONCLUSION -->
+      <section id="conclusion" class="section section-dark">
+        <div class="container two-col-text">
+          <div>
+            <span class="section-tag">06</span>
+            <h2>Conclusion</h2>
+            <p>
+              The rotating SLF trap successfully attracts, guides, and captures spotted lanternflies using
+              low-power mechanical motion. All three subsystem tests exceeded the minimum threshold:
+              GPI = 93.0, CRI = 92.5, RSI = 85.0. Small refinements including alignment correction and
+              friction reduction drove most performance gains, confirming the design is robust and responsive
+              to incremental optimization. Minor rotational instability did not prevent successful operation
+              at prototype scale.
+            </p>
+          </div>
+          <div>
+            <h2>Future Suggestions</h2>
+            <ul class="future-list">
+              <li>Scale to full version (1 m height, 1.07 m diameter) with 12V–24V high-torque DC gear motor</li>
+              <li>Develop and test under real vineyard conditions to evaluate long-term capture efficiency and durability</li>
+              <li>Explore weather-resistant materials and an automated attractant dispensing system</li>
+              <li>Improve outdoor reliability and passive operation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOURCES -->
+      <section id="sources" class="section">
+        <div class="container">
+          <span class="section-tag">07</span>
+          <h2>Sources</h2>
+          <ol class="sources-list">
+            <li>
+              Cossi, Antoine A., et al. "Spotted Lanternflies Respond to Natural Pheromone Lures for Mate-Finding and Oviposition."
+              <em>Insects</em>, vol. 15, no. 6, 2024, article 447, MDPI.
+              <a href="https://www.mdpi.com/2075-4450/15/6/447" target="_blank" rel="noopener">mdpi.com</a>. Accessed 27 Apr. 2026.
+            </li>
+            <li>
+              Esterhuizen, Max. "Researchers Receive USDA Funding to Combat Devilishly Invasive Tree-of-Heaven."
+              <em>Virginia Tech News</em>, 21 Oct. 2024.
+              <a href="https://news.vt.edu/articles/2024/10/usda-research-tree-of-heaven.html" target="_blank" rel="noopener">news.vt.edu</a>. Accessed 27 Apr. 2026.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>SLF Crushers &nbsp;·&nbsp; MAE 2250 &nbsp;·&nbsp; Cornell University &nbsp;·&nbsp; 2026</p>
+    </footer>
+
+  </body>
+</html>
