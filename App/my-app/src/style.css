@@ -233,6 +233,114 @@ p { color: var(--text-main); }
 }
 
 /* =============================================
+   VOTING BANNER
+   ============================================= */
+#voting-banner {
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--black) 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#voting-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(155, 28, 28, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vote-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.vote-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--crimson);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(155, 28, 28, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(155, 28, 28, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(155, 28, 28, 0); }
+}
+
+.vote-text h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--off-white);
+}
+
+.vote-text p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 550px;
+  line-height: 1.6;
+}
+
+.vote-qr-wrapper {
+  position: relative;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 
+    0 25px 60px rgba(0,0,0,0.6),
+    0 0 40px rgba(155,28,28,0.2);
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.vote-qr-wrapper:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 
+    0 35px 80px rgba(0,0,0,0.7),
+    0 0 50px rgba(155,28,28,0.4);
+}
+
+#vote-qr {
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: contain;
+}
+
+.qr-label {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+  .vote-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .vote-text p {
+    margin: 0 auto;
+  }
+}
+
+/* =============================================
    MEDIA PLACEHOLDERS
    ============================================= */
 .media-placeholder {
